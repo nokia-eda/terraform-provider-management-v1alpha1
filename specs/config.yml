@@ -1,0 +1,110 @@
+provider:
+  name: management
+
+data_sources:
+  app_group:
+    read:
+      path: /apps/management.eda.nokia.com
+      method: GET
+
+  ftp_server:
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}
+      method: GET
+
+  ftp_server_list:
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers
+      method: GET
+
+  grpc_server:
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}
+      method: GET
+
+  grpc_server_list:
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers
+      method: GET
+
+  http_server:
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}
+      method: GET
+
+  http_server_list:
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers
+      method: GET
+
+  resource_list:
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1
+      method: GET
+
+  ssh_server:
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}
+      method: GET
+
+  ssh_server_list:
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers
+      method: GET
+
+resources:
+  ftp_server:
+    create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers
+      method: POST
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}
+      method: GET
+    update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}
+      method: PUT
+    delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}
+      method: DELETE
+
+  grpc_server:
+    create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers
+      method: POST
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}
+      method: GET
+    update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}
+      method: PUT
+    delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}
+      method: DELETE
+
+  http_server:
+    create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers
+      method: POST
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}
+      method: GET
+    update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}
+      method: PUT
+    delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}
+      method: DELETE
+
+  ssh_server:
+    create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers
+      method: POST
+    read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}
+      method: GET
+    update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}
+      method: PUT
+    delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}
+      method: DELETE

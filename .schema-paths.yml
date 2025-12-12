@@ -1,0 +1,266 @@
+app_group:
+  - read:
+      path: /apps/management.eda.nokia.com
+      method: GET
+
+intent_targets:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}/_targets
+      method: GET
+
+k8_s_topology_request:
+  - create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}/_topology
+      method: POST
+
+patch:
+  - update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}
+      method: PATCH
+  - update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}
+      method: PATCH
+  - update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}
+      method: PATCH
+  - update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}
+      method: PATCH
+
+resource_history:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}/_revs
+      method: GET
+
+resource_list:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1
+      method: GET
+
+resource_topology:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}/_topology
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}/_topology
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}/_topology
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}/_topology
+      method: GET
+
+status:
+  - delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}
+      method: DELETE
+  - delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}
+      method: DELETE
+  - delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}
+      method: DELETE
+  - delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}
+      method: DELETE
+
+ui_result:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/_ui/{pathname}
+      method: GET
+
+com.nokia.eda.management.v1alpha1.ftp_server:
+  - create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers
+      method: POST
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}
+      method: GET
+  - update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}
+      method: PUT
+
+com.nokia.eda.management.v1alpha1.ftp_server_list:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/ftpservers
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers
+      method: GET
+  - delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers
+      method: DELETE
+
+com.nokia.eda.management.v1alpha1.ftp_server_deleted_resources:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/_deleted
+      method: GET
+
+com.nokia.eda.management.v1alpha1.grpc_server:
+  - create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers
+      method: POST
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}
+      method: GET
+  - update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}
+      method: PUT
+
+com.nokia.eda.management.v1alpha1.grpc_server_list:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/grpcservers
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers
+      method: GET
+  - delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers
+      method: DELETE
+
+com.nokia.eda.management.v1alpha1.grpc_server_deleted_resources:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/_deleted
+      method: GET
+
+com.nokia.eda.management.v1alpha1.http_server:
+  - create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers
+      method: POST
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}
+      method: GET
+  - update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}
+      method: PUT
+
+com.nokia.eda.management.v1alpha1.http_server_list:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/httpservers
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers
+      method: GET
+  - delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers
+      method: DELETE
+
+com.nokia.eda.management.v1alpha1.http_server_deleted_resources:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/_deleted
+      method: GET
+
+com.nokia.eda.management.v1alpha1.ssh_server:
+  - create:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers
+      method: POST
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}
+      method: GET
+  - update:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}
+      method: PUT
+
+com.nokia.eda.management.v1alpha1.ssh_server_list:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers
+      method: GET
+  - delete:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers
+      method: DELETE
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/sshservers
+      method: GET
+
+com.nokia.eda.management.v1alpha1.ssh_server_deleted_resources:
+  - read:
+      path: /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/_deleted
+      method: GET
+
+totalPaths: 31
+totalSchemas: 75
+usedSchemas: 21
+unusedSchemas: 54
+unusedSchemaList:
+  - AppGroupVersion
+  - ErrorIndex
+  - ErrorItem
+  - ErrorResponse
+  - IntentTarget
+  - K8SPatchOp
+  - OverlayState
+  - Resource
+  - ResourceHistoryEntry
+  - StatusDetails
+  - TopoAttrMetadata
+  - TopoAttribute
+  - TopoBoolExpression
+  - TopoBoolLiteral
+  - TopoElemMetadata
+  - TopoEndpointBoolExpression
+  - TopoField
+  - TopoFixedBoolExpression
+  - TopoLabelSelector
+  - TopoLiteralStatusOrBadge
+  - TopoLiteralValue
+  - TopoLogicalExpression
+  - TopoNodeGrouping
+  - TopoOverlayEndpoint
+  - TopoOverlayEndpointState
+  - TopoOverlayLink
+  - TopoOverlayLinkGroup
+  - TopoOverlayLinkGroupEndpoint
+  - TopoOverlayLinkState
+  - TopoOverlayNode
+  - TopoOverlayNodeOrGroup
+  - TopoOverlayNodeState
+  - TopoOverlayValue
+  - TopoSchema
+  - TopoStateFilter
+  - TopoValue
+  - TopoValueExpression
+  - Topology
+  - com.nokia.eda.management.v1alpha1.FTPServer_DeletedResourceEntry
+  - com.nokia.eda.management.v1alpha1.FTPServer_alarms
+  - com.nokia.eda.management.v1alpha1.FTPServer_deviations
+  - com.nokia.eda.management.v1alpha1.FTPServer_metadata
+  - com.nokia.eda.management.v1alpha1.GRPCServer_DeletedResourceEntry
+  - com.nokia.eda.management.v1alpha1.GRPCServer_alarms
+  - com.nokia.eda.management.v1alpha1.GRPCServer_deviations
+  - com.nokia.eda.management.v1alpha1.GRPCServer_metadata
+  - com.nokia.eda.management.v1alpha1.HTTPServer_DeletedResourceEntry
+  - com.nokia.eda.management.v1alpha1.HTTPServer_alarms
+  - com.nokia.eda.management.v1alpha1.HTTPServer_deviations
+  - com.nokia.eda.management.v1alpha1.HTTPServer_metadata
+  - com.nokia.eda.management.v1alpha1.SSHServer_DeletedResourceEntry
+  - com.nokia.eda.management.v1alpha1.SSHServer_alarms
+  - com.nokia.eda.management.v1alpha1.SSHServer_deviations
+  - com.nokia.eda.management.v1alpha1.SSHServer_metadata
