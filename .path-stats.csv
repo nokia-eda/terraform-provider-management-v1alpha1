@@ -11,7 +11,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/_deleted,GET,com.nokia.eda.management.v1alpha1.FTPServer_DeletedResources,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name},DELETE,Status,ftp_server,true,false,true
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name},GET,com.nokia.eda.management.v1alpha1.FTPServer,ftp_server,true,true,true
-/apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name},PATCH,Patch,,false,false,false
+/apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name},PATCH,com.nokia.eda.management.v1alpha1.FTPServer,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name},PUT,com.nokia.eda.management.v1alpha1.FTPServer,ftp_server,true,false,true
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/ftpservers/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -23,7 +23,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/_deleted,GET,com.nokia.eda.management.v1alpha1.GRPCServer_DeletedResources,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name},DELETE,Status,grpc_server,true,false,true
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name},GET,com.nokia.eda.management.v1alpha1.GRPCServer,grpc_server,true,true,true
-/apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name},PATCH,Patch,,false,false,false
+/apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name},PATCH,com.nokia.eda.management.v1alpha1.GRPCServer,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name},PUT,com.nokia.eda.management.v1alpha1.GRPCServer,grpc_server,true,false,true
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/grpcservers/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -35,7 +35,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/_deleted,GET,com.nokia.eda.management.v1alpha1.HTTPServer_DeletedResources,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name},DELETE,Status,http_server,true,false,true
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name},GET,com.nokia.eda.management.v1alpha1.HTTPServer,http_server,true,true,true
-/apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name},PATCH,Patch,,false,false,false
+/apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name},PATCH,com.nokia.eda.management.v1alpha1.HTTPServer,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name},PUT,com.nokia.eda.management.v1alpha1.HTTPServer,http_server,true,false,true
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/httpservers/{name}/_targets,GET,IntentTargets,,false,false,false
@@ -47,7 +47,7 @@ Path,Method,Schema,Model Name,Supported,Datasource,Resource
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/_deleted,GET,com.nokia.eda.management.v1alpha1.SSHServer_DeletedResources,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name},DELETE,Status,ssh_server,true,false,true
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name},GET,com.nokia.eda.management.v1alpha1.SSHServer,ssh_server,true,true,true
-/apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name},PATCH,Patch,,false,false,false
+/apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name},PATCH,com.nokia.eda.management.v1alpha1.SSHServer,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name},PUT,com.nokia.eda.management.v1alpha1.SSHServer,ssh_server,true,false,true
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}/_revs,GET,ResourceHistory,,false,false,false
 /apps/management.eda.nokia.com/v1alpha1/namespaces/{namespace}/sshservers/{name}/_targets,GET,IntentTargets,,false,false,false
